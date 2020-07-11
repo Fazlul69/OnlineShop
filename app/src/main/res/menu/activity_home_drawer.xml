@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="@string/dashboard"/>
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/order"
+            android:title="@string/orders"/>
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/message"
+            android:title="@string/messages"/>
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/cart"
+            android:title="@string/cart"/>
+        <item
+            android:id="@+id/nav_wish"
+            android:icon="@drawable/wish"
+            android:title="@string/wish_list"/>
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/shop"
+            android:title="@string/favorite_shops"/>
+        <item
+            android:id="@+id/nav_voucher"
+            android:icon="@drawable/vouchar"
+            android:title="@string/vouchers"/>
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/invite"
+            android:title="@string/invite_amp_earn"/>
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="@string/contact_us"/>
+
+    </group>
+</menu>

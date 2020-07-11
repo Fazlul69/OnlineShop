@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">OnlineShop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="car_wash">Car Wash</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="orders">Orders</string>
+    <string name="messages">Messages</string>
+    <string name="cart">Cart</string>
+    <string name="wish_list">Wish List</string>
+    <string name="favorite_shops">Favorite Shops</string>
+    <string name="vouchers">Vouchers</string>
+    <string name="invite_amp_earn"><![CDATA[Invite & Earn]]></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="notifications">Notifications</string>
+    <string name="serviceimage">serviceimage</string>
+    <string name="categories">Categories</string>
+    <string name="brands">Brands</string>
+    <string name="shops">Shops</string>
+    <string name="item_name">Item Name</string>
+    <string name="bus">Bus</string>
+    <string name="flash_deal">Flash Deal</string>
+    <string name="wow_vinegar_sulphate_parabens_shampoo">WOW Vinegar Sulphate Parabens Shampoo</string>
+    <string name="tk">৳ 255</string>
+</resources>
