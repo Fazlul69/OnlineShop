@@ -27,13 +27,13 @@ import androidx.appcompat.widget.Toolbar;
 
 public class HomeActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
-
+    public static Toolbar toolbar;
     public static BottomNavigationView bottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

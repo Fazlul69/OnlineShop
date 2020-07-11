@@ -153,26 +153,11 @@ public class HomeFragment extends Fragment{
         serviceModelList.add(new ServiceModel("Motor's",R.drawable.moto));
         serviceModelList.add(new ServiceModel("Online Shop",R.drawable.onlineshop));
 
-        /////service
-
-
-        ServiceAdapter serviceAdapter = new ServiceAdapter(this,serviceModelList);
+        ServiceAdapter serviceAdapter = new ServiceAdapter(getContext(),serviceModelList);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(),3,GridLayoutManager.HORIZONTAL,false);
         serviceList.setLayoutManager(gridLayoutManager);
         serviceList.setAdapter(serviceAdapter);
-     /*   serviceList.setAdapter(new ServiceAdapter(serviceModelList, new ServiceAdapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(ServiceModel item) {
-                ServiceInnerListFragment serviceInnerListFragment = new ServiceInnerListFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction ft = fragmentManager.beginTransaction();
-                ft.replace(R.id.serviceList,serviceInnerListFragment, null);
-                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                ft.addToBackStack(null);
-                ft.commit();
-            }
-        }));*/
 
         ///service end
 

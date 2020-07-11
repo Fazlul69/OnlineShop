@@ -1,6 +1,7 @@
 package com.example.onlineshop.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +14,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.onlineshop.HomeActivity;
 import com.example.onlineshop.R;
+import com.example.onlineshop.ServiceInnerListOneActivity;
 import com.example.onlineshop.fragment.ServiceInnerListFragment;
 import com.example.onlineshop.model.ServiceModel;
 import com.example.onlineshop.ui.home.HomeFragment;
@@ -25,8 +28,9 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ViewHold
     private Context context;
     private List<ServiceModel> serviceData;
 
-    public ServiceAdapter(HomeFragment homeFragment, List<ServiceModel> serviceData) {
+    public ServiceAdapter(Context context, List<ServiceModel> serviceData) {
         this.serviceData = serviceData;
+        this.context=context;
     }
 
 
@@ -46,12 +50,9 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ViewHold
     holder.itemView.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-                ServiceInnerListFragment serviceInnerListFragment = new ServiceInnerListFragment();
-                FragmentManager fragmentManager = ((FragmentActivity)view.getContext()).getSupportFragmentManager();
-                FragmentTransaction ft = fragmentManager.beginTransaction();
-                ft.replace(R.id.nav_host_fragment,serviceInnerListFragment);
-                ft.addToBackStack(null);
-                ft.commit();
+
+            Intent intent = new Intent(context, ServiceInnerListOneActivity.class);
+            context.startActivity(intent);
         }
     });
     }
