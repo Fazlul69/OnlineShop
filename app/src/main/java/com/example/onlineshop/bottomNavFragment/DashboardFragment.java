@@ -41,11 +41,11 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 getActivity().onBackPressed();
-                bottomNavigationView.setVisibility(View.VISIBLE);
+                /*bottomNavigationView.setVisibility(View.VISIBLE);*/
             }
         });
 
-        bottomNavigationView.setVisibility(View.INVISIBLE);
+       /* bottomNavigationView.setVisibility(View.INVISIBLE);*/
         return root;
     }
 }
