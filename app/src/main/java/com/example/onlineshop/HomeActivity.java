@@ -15,9 +15,11 @@ import com.google.android.material.navigation.NavigationView;
 
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
@@ -53,6 +55,36 @@ public class HomeActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
 
+        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
+            @Override
+            public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
+                if(destination.getId() == R.id.cartFragment ){
+
+                    bottomNavigationView.setVisibility(View.INVISIBLE);
+                }
+                else if(destination.getId() == R.id.dashboardFragment ){
+
+                    bottomNavigationView.setVisibility(View.INVISIBLE);
+                }
+                else if(destination.getId() == R.id.wishFragment){
+
+                    bottomNavigationView.setVisibility(View.INVISIBLE);
+                }
+                else{
+
+                    bottomNavigationView.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.home, menu);
+        return true;
     }
 
 

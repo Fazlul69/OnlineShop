@@ -7,6 +7,8 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +18,7 @@ import android.widget.Toolbar;
 
 import com.example.onlineshop.HomeActivity;
 import com.example.onlineshop.R;
+import com.example.onlineshop.ui.home.HomeFragment;
 
 import static com.example.onlineshop.HomeActivity.bottomNavigationView;
 import static com.example.onlineshop.HomeActivity.toolbar;
@@ -46,11 +49,10 @@ public class CartFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 getActivity().onBackPressed();
-                bottomNavigationView.setVisibility(View.VISIBLE);
-            }
+                }
         });
 
-        bottomNavigationView.setVisibility(View.INVISIBLE);
+       /* bottomNavigationView.setVisibility(View.INVISIBLE);*/
         return view;
     }
 
