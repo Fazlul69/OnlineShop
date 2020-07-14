@@ -200,7 +200,7 @@ public class HomeFragment extends Fragment{
         flashDealModelList.add(new FlashDealModel(R.drawable.oil,"Sunflower Oil","৳ 550"));
         flashDealModelList.add(new FlashDealModel(R.drawable.pasta,"Italian Pasta","৳ 120"));
 
-        FlashDealAdapter flashDealAdapter = new FlashDealAdapter(getActivity(),flashDealModelList);
+        FlashDealAdapter flashDealAdapter = new FlashDealAdapter(getContext(),flashDealModelList);
         GridLayoutManager flashDealGrid = new GridLayoutManager(getActivity(),2,GridLayoutManager.VERTICAL,false);
         flashDealList.setLayoutManager(flashDealGrid);
         flashDealList.setAdapter(flashDealAdapter);

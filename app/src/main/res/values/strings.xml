@@ -37,4 +37,9 @@
     <string name="flash_deal">Flash Deal</string>
     <string name="wow_vinegar_sulphate_parabens_shampoo">WOW Vinegar Sulphate Parabens Shampoo</string>
     <string name="tk">৳ 255</string>
+    <string name="share">share</string>
+    <string name="copy">COPY</string>
+    <string name="product_description">A Backpack also called book bag, kit bag, knapsack, rucksack, a pack is, in its simplest form, a cloth sack carried on one\'s back and secured with two straps that go over the shoulders, but there can be variations to this basic design. Lightweight types of backpacks are sometimes worn on only one shoulder strap.</string>
+    <string name="description">Description</string>
+    <string name="specifications">Specifications</string>
 </resources>

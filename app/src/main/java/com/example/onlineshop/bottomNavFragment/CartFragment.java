@@ -40,8 +40,6 @@ public class CartFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_cart, container, false);
 
         HomeActivity main = (HomeActivity) getActivity();
-//You can access all public variable and methods of MainActivity.
-//simply call
         main.setSupportActionBar(toolbar);
         main.getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         toolbar.setNavigationIcon(R.drawable.back_arrow);
