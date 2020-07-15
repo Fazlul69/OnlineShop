@@ -96,7 +96,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-
+/*
   @Override
   public void onBackPressed() {
       DrawerLayout drawer =findViewById(R.id.drawer_layout);
@@ -105,7 +105,7 @@ public class HomeActivity extends AppCompatActivity {
       } else {
           super.onBackPressed();
       }
-  }
+  }*/
 
 
 }

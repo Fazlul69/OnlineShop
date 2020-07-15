@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECE6E6"
-
     tools:context=".ProductDetailsActivity">
-<!--
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/product_toolbar"
@@ -17,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
 
 
     <ScrollView

@@ -32,7 +32,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="3">
+            android:weightSum="3"
+            android:baselineAligned="false">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,9 +47,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="0.0"
+                    android:text="@string/totalRating"
                     android:textColor="#000"
-                    android:textSize="40dp" />
+                    android:textSize="40sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -88,9 +89,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:gravity="center"
-                    android:text="0"
+                    android:text="@string/Zero"
                     android:textColor="#000"
-                    android:textSize="20dp" />
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
@@ -109,7 +110,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:gravity="center"
-                        android:text="5"
+                        android:text="@string/five"
                         android:textColor="#000" />
 
                     <ImageView
@@ -121,7 +122,8 @@
                         android:layout_width="180dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
-                        android:background="@drawable/slider_background" />
+                        android:background="@drawable/slider_background"
+                        android:layout_marginStart="8dp" />
 
                     <TextView
                         android:id="@+id/five_star_rating"
@@ -129,8 +131,9 @@
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="0"
-                        android:textColor="#000" />
+                        android:text="@string/Zero"
+                        android:textColor="#000"
+                        android:layout_marginStart="8dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -142,7 +145,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:gravity="center"
-                        android:text="4"
+                        android:text="@string/four"
                         android:textColor="#000" />
 
                     <ImageView
@@ -154,7 +157,8 @@
                         android:layout_width="180dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
-                        android:background="@drawable/slider_background" />
+                        android:background="@drawable/slider_background"
+                        android:layout_marginStart="8dp" />
 
                     <TextView
                         android:id="@+id/four_star_rating"
@@ -162,8 +166,9 @@
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="0"
-                        android:textColor="#000" />
+                        android:text="@string/Zero"
+                        android:textColor="#000"
+                        android:layout_marginStart="8dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -175,7 +180,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:gravity="center"
-                        android:text="3"
+                        android:text="@string/three"
                         android:textColor="#000" />
 
                     <ImageView
@@ -187,7 +192,8 @@
                         android:layout_width="180dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
-                        android:background="@drawable/slider_background" />
+                        android:background="@drawable/slider_background"
+                        android:layout_marginStart="8dp" />
 
                     <TextView
                         android:id="@+id/three_star_rating"
@@ -195,8 +201,9 @@
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="0"
-                        android:textColor="#000" />
+                        android:text="@string/Zero"
+                        android:textColor="#000"
+                        android:layout_marginStart="8dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -208,7 +215,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:gravity="center"
-                        android:text="2"
+                        android:text="@string/two"
                         android:textColor="#000" />
 
                     <ImageView
@@ -220,7 +227,8 @@
                         android:layout_width="180dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
-                        android:background="@drawable/slider_background" />
+                        android:background="@drawable/slider_background"
+                        android:layout_marginStart="8dp" />
 
                     <TextView
                         android:id="@+id/tow_star_rating"
@@ -228,8 +236,9 @@
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="0"
-                        android:textColor="#000" />
+                        android:text="@string/Zero"
+                        android:textColor="#000"
+                        android:layout_marginStart="8dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -241,7 +250,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:gravity="center"
-                        android:text="1"
+                        android:text="@string/one"
                         android:textColor="#000" />
 
                     <ImageView
@@ -253,7 +262,8 @@
                         android:layout_width="180dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
-                        android:background="@drawable/slider_background" />
+                        android:background="@drawable/slider_background"
+                        android:layout_marginStart="8dp" />
 
                     <TextView
                         android:id="@+id/one_star_rating"
@@ -261,15 +271,16 @@
                         android:layout_height="20dp"
                         android:layout_marginLeft="8dp"
                         android:gravity="center"
-                        android:text="0"
-                        android:textColor="#000" />
+                        android:text="@string/Zero"
+                        android:textColor="#000"
+                        android:layout_marginStart="8dp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
 
-    <ImageVie
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginStart="8dp"

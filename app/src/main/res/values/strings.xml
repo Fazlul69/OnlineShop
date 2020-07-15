@@ -4,7 +4,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="car_wash">Car Wash</string>
-    <string name="todo">TODO</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -48,4 +47,12 @@
     <string name="price">690</string>
     <string name="reviews_amp_ratings"><![CDATA[Reviews & Ratings]]></string>
     <string name="view_all_or_write_a_review">View all or write a review</string>
+    <string name="todo">TODO</string>
+    <string name="Zero">0</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="three">3</string>
+    <string name="two">2</string>
+    <string name="one">1</string>
+    <string name="totalRating">0.0</string>
 </resources>

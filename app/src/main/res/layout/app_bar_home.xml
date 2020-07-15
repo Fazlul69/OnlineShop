@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+<!--    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -29,8 +29,8 @@
                 android:gravity="center_horizontal" />
         </androidx.appcompat.widget.Toolbar>
 
-    </com.google.android.material.appbar.AppBarLayout>
- <!--   <androidx.appcompat.widget.Toolbar
+    </com.google.android.material.appbar.AppBarLayout>-->
+   <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.appcompat.widget.Toolbar>-->
+    </androidx.appcompat.widget.Toolbar>
 
     <include layout="@layout/content_home"
         app:layout_constraintBottom_toTopOf="@id/toolbar"
