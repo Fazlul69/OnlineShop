@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_marginBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/one"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="2"
+            android:id="@+id/brand_name_image"
+            android:src="@drawable/brandimage" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/brand_name"
+                android:layout_marginLeft="dp"
+                android:textColor="#000"
+                android:text="@string/blue" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/brand_address"
+                    android:layout_weight="1"
+
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/addressOfBrand"
+                    android:textSize="#000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/call" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/brand_phone"
+                    android:layout_weight="1"
+
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/MobileNoOfBrand"
+                    android:textSize="#000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/taka" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/product_price"
+                    android:layout_weight="1"
+                    android:text="@string/price"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F30F0F"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/one">
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:id="@+id/add_to_cart"
+            android:hint="Add to Cart"
+            android:textColorHint="#000"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/slider_background"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:id="@+id/buy_now"
+            android:hint="Buy Now"
+            android:textColorHint="#FFF"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/red_round_background"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

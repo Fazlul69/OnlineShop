@@ -40,6 +40,9 @@
             <include layout="@layout/color_layout"/>
             <include layout="@layout/product_id_layout"/>
             <include layout="@layout/product_description_layout"/>
+            <include layout="@layout/product_specification_layout"/>
+            <include layout="@layout/product_details_brand_info_layout"/>
+            <include layout="@layout/review_layout"/>
         </LinearLayout>
     </ScrollView>
 

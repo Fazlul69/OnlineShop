@@ -42,4 +42,10 @@
     <string name="product_description">A Backpack also called book bag, kit bag, knapsack, rucksack, a pack is, in its simplest form, a cloth sack carried on one\'s back and secured with two straps that go over the shoulders, but there can be variations to this basic design. Lightweight types of backpacks are sometimes worn on only one shoulder strap.</string>
     <string name="description">Description</string>
     <string name="specifications">Specifications</string>
+    <string name="blue">Blue</string>
+    <string name="addressOfBrand">193 Bangabandhu Sarak, Narayanganj 1400, Bangladesh</string>
+    <string name="MobileNoOfBrand">01784596215</string>
+    <string name="price">690</string>
+    <string name="reviews_amp_ratings"><![CDATA[Reviews & Ratings]]></string>
+    <string name="view_all_or_write_a_review">View all or write a review</string>
 </resources>
