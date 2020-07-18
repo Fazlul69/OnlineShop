@@ -55,4 +55,11 @@
     <string name="two">2</string>
     <string name="one">1</string>
     <string name="totalRating">0.0</string>
+    <string name="shopname">Comilla Computer</string>
+    <string name="totalreviewerofshop">( 0 )</string>
+    <string name="totalFollowersOfShop">(240)</string>
+    <string name="location">Location</string>
+    <string name="call">Call</string>
+    <string name="delivery">Delivery</string>
+    <string name="reviews">Reviews</string>
 </resources>

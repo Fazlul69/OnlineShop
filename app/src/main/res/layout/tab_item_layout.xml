@@ -26,8 +26,8 @@
 
             <ImageView
                 android:id="@+id/tab_item_image"
-                android:layout_width="120dp"
-                android:layout_height="160dp"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
@@ -37,7 +37,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/restaurant" />
+                app:srcCompat="@drawable/books" />
 
             <TextView
                 android:id="@+id/tab_item_name"

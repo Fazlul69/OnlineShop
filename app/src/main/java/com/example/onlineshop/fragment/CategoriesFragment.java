@@ -35,13 +35,11 @@ public class CategoriesFragment extends Fragment {
 
         RecyclerView tab_category_recycle = view.findViewById(R.id.tab_category_recycle);
         tabModelList = new ArrayList<>();
-        tabModelList.add(new TabModel(R.drawable.b2b,"B2B"));
-        tabModelList.add(new TabModel(R.drawable.doctor,"Doctor"));
-        tabModelList.add(new TabModel(R.drawable.moto,"Motor's"));
-        tabModelList.add(new TabModel(R.drawable.onlineshop,"Online Shop"));
-        tabModelList.add(new TabModel(R.drawable.restaurant,"Restaurant"));
+        tabModelList.add(new TabModel(R.drawable.books,"Books"));
+        tabModelList.add(new TabModel(R.drawable.bags,"Bags"));
+        tabModelList.add(new TabModel(R.drawable.shirt,"Clothes"));
 
-        CategoriesAdapter categoriesAdapter = new CategoriesAdapter(this,tabModelList);
+        CategoriesAdapter categoriesAdapter = new CategoriesAdapter(getContext(),tabModelList);
 
         GridLayoutManager categoryGrid = new GridLayoutManager(getActivity(),3,GridLayoutManager.VERTICAL,false);
         tab_category_recycle.setLayoutManager(categoryGrid);

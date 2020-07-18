@@ -7,29 +7,27 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.ContentView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.onlineshop.R;
-import com.example.onlineshop.fragment.CategoriesFragment;
 import com.example.onlineshop.model.TabModel;
 
 import java.util.List;
 
-public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.ViewHolder> {
+public class ShopsAdapter extends RecyclerView.Adapter<ShopsAdapter.ViewHolder> {
 
-    private List<TabModel> tabModelList;
+    private List<TabModel>tabModelList;
     private Context context;
 
-    public CategoriesAdapter(Context context , List<TabModel> tabModelList) {
+    public ShopsAdapter(Context context , List<TabModel> tabModelList) {
         this.tabModelList = tabModelList;
-        this.context=context;
+        this.context = context;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ShopsAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view ;
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         view = inflater.inflate(R.layout.tab_item_layout,parent,false);
@@ -37,7 +35,7 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Vi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ShopsAdapter.ViewHolder holder, int position) {
         holder.tab_item_image.setImageResource(tabModelList.get(position).getTab_item_image());
         holder.tab_item_name.setText(tabModelList.get(position).getTab_item_name());
     }
