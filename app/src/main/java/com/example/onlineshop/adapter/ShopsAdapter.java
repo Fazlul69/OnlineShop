@@ -1,6 +1,7 @@
 package com.example.onlineshop.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,18 +11,21 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.onlineshop.ProductDetailsActivity;
 import com.example.onlineshop.R;
+import com.example.onlineshop.model.ShopsModal;
 import com.example.onlineshop.model.TabModel;
+import com.example.onlineshop.tab.ShopActivity;
 
 import java.util.List;
 
 public class ShopsAdapter extends RecyclerView.Adapter<ShopsAdapter.ViewHolder> {
 
-    private List<TabModel>tabModelList;
+    private List<ShopsModal>shopsModalList;
     private Context context;
 
-    public ShopsAdapter(Context context , List<TabModel> tabModelList) {
-        this.tabModelList = tabModelList;
+    public ShopsAdapter(Context context , List<ShopsModal> shopsModalList) {
+        this.shopsModalList = shopsModalList;
         this.context = context;
     }
 
@@ -36,24 +40,32 @@ public class ShopsAdapter extends RecyclerView.Adapter<ShopsAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ShopsAdapter.ViewHolder holder, int position) {
-        holder.tab_item_image.setImageResource(tabModelList.get(position).getTab_item_image());
-        holder.tab_item_name.setText(tabModelList.get(position).getTab_item_name());
+        holder.tab_item_image.setImageResource(shopsModalList.get(position).getTab_item_image());
+        holder.tab_item_name.setText(shopsModalList.get(position).getTab_item_name());
     }
 
     @Override
     public int getItemCount() {
-        return tabModelList.size();
+        return shopsModalList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public static class ViewHolder extends RecyclerView.ViewHolder{
 
         ImageView tab_item_image;
         TextView tab_item_name;
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull final View itemView) {
             super(itemView);
 
             tab_item_image = itemView.findViewById(R.id.tab_item_image);
             tab_item_name = itemView.findViewById(R.id.tab_item_name);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent shopIntent = new Intent(itemView.getContext(), ShopActivity.class);
+                    itemView.getContext().startActivity(shopIntent);
+                }
+            });
         }
     }
 }

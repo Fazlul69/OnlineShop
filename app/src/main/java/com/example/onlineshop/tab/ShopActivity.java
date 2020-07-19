@@ -1,10 +1,10 @@
 package com.example.onlineshop.tab;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 import com.example.onlineshop.R;
+
 
 public class ShopActivity extends AppCompatActivity {
 

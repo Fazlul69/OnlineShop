@@ -62,4 +62,8 @@
     <string name="call">Call</string>
     <string name="delivery">Delivery</string>
     <string name="reviews">Reviews</string>
+    <string name="accessories">Accessories</string>
+    <string name="shop_categories">Categories</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="all_products">All Products</string>
 </resources>
