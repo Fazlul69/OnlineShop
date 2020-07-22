@@ -11,10 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.onlineshop.ProductDetailsActivity;
 import com.example.onlineshop.R;
 import com.example.onlineshop.model.ShopsModal;
-import com.example.onlineshop.model.TabModel;
 import com.example.onlineshop.tab.ShopActivity;
 
 import java.util.List;

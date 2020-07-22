@@ -2,18 +2,17 @@ package com.example.onlineshop.bottomNavFragment;
 
 import android.os.Bundle;
 
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.onlineshop.HomeActivity;
 import com.example.onlineshop.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import static com.example.onlineshop.HomeActivity.bottomNavigationView;
 import static com.example.onlineshop.HomeActivity.toolbar;
 
 
@@ -31,11 +30,14 @@ public class DashboardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        setHasOptionsMenu(true);
         View root =  inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         HomeActivity main = (HomeActivity) getActivity();
         main.setSupportActionBar(toolbar);
-        main.getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        main.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        main.
+        toolbar.setTitle("Dashboard");
         toolbar.setNavigationIcon(R.drawable.back_arrow);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,5 +49,10 @@ public class DashboardFragment extends Fragment {
 
        /* bottomNavigationView.setVisibility(View.INVISIBLE);*/
         return root;
+    }
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.dashboard_menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
     }
 }

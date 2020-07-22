@@ -21,7 +21,6 @@ import com.example.onlineshop.adapter.ProductSliderAdapter;
 import com.example.onlineshop.model.ProductImageSliderModel;
 import com.example.onlineshop.model.SliderModel;
 import com.google.android.material.tabs.TabLayout;
-import static com.example.onlineshop.HomeActivity.toolbar;
 
 import java.util.ArrayList;
 import java.util.List;

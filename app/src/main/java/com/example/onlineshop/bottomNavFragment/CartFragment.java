@@ -3,24 +3,16 @@ package com.example.onlineshop.bottomNavFragment;
 import android.os.Build;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.SearchView;
-import android.widget.Toolbar;
 
 import com.example.onlineshop.HomeActivity;
 import com.example.onlineshop.R;
-import com.example.onlineshop.ui.home.HomeFragment;
 
-import static com.example.onlineshop.HomeActivity.bottomNavigationView;
 import static com.example.onlineshop.HomeActivity.toolbar;
 
 /**

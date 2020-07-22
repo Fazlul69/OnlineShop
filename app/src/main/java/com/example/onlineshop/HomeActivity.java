@@ -29,17 +29,18 @@ import androidx.appcompat.widget.Toolbar;
 
 public class HomeActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
-    public static Toolbar toolbar;
     public static BottomNavigationView bottomNavigationView;
+    public static Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitle("Online Shop");
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        final NavigationView navigationView = findViewById(R.id.nav_view);
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -59,24 +60,19 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
                 if(destination.getId() == R.id.cartFragment ){
-
                     bottomNavigationView.setVisibility(View.INVISIBLE);
                 }
                 else if(destination.getId() == R.id.dashboardFragment ){
-
                     bottomNavigationView.setVisibility(View.INVISIBLE);
                 }
                 else if(destination.getId() == R.id.wishFragment){
-
                     bottomNavigationView.setVisibility(View.INVISIBLE);
                 }
                 else{
-
                     bottomNavigationView.setVisibility(View.VISIBLE);
                 }
             }
         });
-
     }
 
 
@@ -95,11 +91,11 @@ public class HomeActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-
 /*
+
   @Override
   public void onBackPressed() {
-      DrawerLayout drawer =findViewById(R.id.drawer_layout);
+      DrawerLayout drawer = findViewById(R.id.drawer_layout);
       if (drawer.isDrawerOpen(GravityCompat.START)) {
           drawer.closeDrawer(GravityCompat.START);
       } else {

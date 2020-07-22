@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 
 import com.example.onlineshop.R;
 import com.example.onlineshop.adapter.CategoriesAdapter;
+import com.example.onlineshop.adapter.ShopsAdapter;
+import com.example.onlineshop.model.ShopsModal;
 import com.example.onlineshop.model.TabModel;
 
 import java.util.ArrayList;
@@ -26,7 +28,7 @@ public class ShopsFragment extends Fragment {
         // Required empty public constructor
     }
 
-    private List<TabModel> tabModelList;
+    private List<ShopsModal> shopsModalList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,19 +37,19 @@ public class ShopsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_shops, container, false);
 
         RecyclerView tab_category_recycle = view.findViewById(R.id.tab_category_recycle);
-        tabModelList = new ArrayList<>();
-        tabModelList.add(new TabModel(R.drawable.techshop,"ACI"));
-        tabModelList.add(new TabModel(R.drawable.tvsshop,"AKS"));
-        tabModelList.add(new TabModel(R.drawable.zaysshop,"Toyota"));
-        tabModelList.add(new TabModel(R.drawable.gadgetshop,"Teer"));
-        tabModelList.add(new TabModel(R.drawable.evalyshop,"Samsung"));
-        tabModelList.add(new TabModel(R.drawable.tongshop,"Marks"));
+        shopsModalList = new ArrayList<>();
+        shopsModalList.add(new ShopsModal(R.drawable.techshop,"Tech"));
+        shopsModalList.add(new ShopsModal(R.drawable.tvsshop,"TVS"));
+        shopsModalList.add(new ShopsModal(R.drawable.zaysshop,"Zays"));
+        shopsModalList.add(new ShopsModal(R.drawable.gadgetshop,"Gadget"));
+        shopsModalList.add(new ShopsModal(R.drawable.evalyshop,"Evaly"));
+        shopsModalList.add(new ShopsModal(R.drawable.tongshop,"Tong Bazar"));
 
-        CategoriesAdapter categoriesAdapter = new CategoriesAdapter(getContext(),tabModelList);
+        ShopsAdapter shopsAdapter = new ShopsAdapter(getContext(),shopsModalList);
 
-        GridLayoutManager categoryGrid = new GridLayoutManager(getActivity(),3,GridLayoutManager.VERTICAL,false);
-        tab_category_recycle.setLayoutManager(categoryGrid);
-        tab_category_recycle.setAdapter(categoriesAdapter);
+        GridLayoutManager shopGrid = new GridLayoutManager(getActivity(),3,GridLayoutManager.VERTICAL,false);
+        tab_category_recycle.setLayoutManager(shopGrid);
+        tab_category_recycle.setAdapter(shopsAdapter);
 
         return view;
     }

@@ -2,6 +2,7 @@ package com.example.onlineshop.bottomNavFragment;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -11,13 +12,13 @@ import android.view.ViewGroup;
 import com.example.onlineshop.HomeActivity;
 import com.example.onlineshop.R;
 
-import static com.example.onlineshop.HomeActivity.bottomNavigationView;
 import static com.example.onlineshop.HomeActivity.toolbar;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class WishFragment extends Fragment {
+
 
     public WishFragment() {
         // Required empty public constructor
