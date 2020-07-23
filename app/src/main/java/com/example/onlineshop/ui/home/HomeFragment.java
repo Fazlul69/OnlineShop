@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
@@ -201,9 +203,13 @@ public class HomeFragment extends Fragment{
         flashDealModelList.add(new FlashDealModel(R.drawable.oil,"Sunflower Oil","৳ 550"));
         flashDealModelList.add(new FlashDealModel(R.drawable.pasta,"Italian Pasta","৳ 120"));
 
-        FlashDealAdapter flashDealAdapter = new FlashDealAdapter(getContext(),flashDealModelList);
+        /*FlashDealAdapter flashDealAdapter = new FlashDealAdapter(getContext(),flashDealModelList);
         GridLayoutManager flashDealGrid = new GridLayoutManager(getActivity(),2,GridLayoutManager.VERTICAL,false);
         flashDealList.setLayoutManager(flashDealGrid);
+        flashDealList.setAdapter(flashDealAdapter);*/
+        FlashDealAdapter flashDealAdapter = new FlashDealAdapter(getContext(),flashDealModelList);
+        LinearLayoutManager flashLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL,false);
+        flashDealList.setLayoutManager(flashLayoutManager);
         flashDealList.setAdapter(flashDealAdapter);
 
         ////flash deal end
