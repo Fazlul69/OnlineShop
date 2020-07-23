@@ -23,11 +23,13 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.example.onlineshop.R;
 import com.example.onlineshop.adapter.FlashDealAdapter;
+import com.example.onlineshop.adapter.RecentProductAdapter;
 import com.example.onlineshop.adapter.ServiceAdapter;
 import com.example.onlineshop.adapter.SliderAdapter;
 import com.example.onlineshop.adapter.TabViewPagerAdapter;
 import com.example.onlineshop.fragment.ServiceInnerListFragment;
 import com.example.onlineshop.model.FlashDealModel;
+import com.example.onlineshop.model.RecentProductModel;
 import com.example.onlineshop.model.ServiceModel;
 import com.example.onlineshop.model.SliderModel;
 import com.google.android.material.tabs.TabItem;
@@ -60,6 +62,8 @@ public class HomeFragment extends Fragment{
     ///
     ///flash deal
     private List<FlashDealModel>flashDealModelList;
+    ///product
+    private List<RecentProductModel>recentProductModelList;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -213,6 +217,25 @@ public class HomeFragment extends Fragment{
         flashDealList.setAdapter(flashDealAdapter);
 
         ////flash deal end
+
+
+        ////Recent Product start
+
+        RecyclerView recentProductRecycle = root.findViewById(R.id.recendProductRecycler);
+
+        recentProductModelList = new ArrayList<>();
+        recentProductModelList.add(new RecentProductModel(R.drawable.shampoo,"Shampoo","৳ 255"));
+        recentProductModelList.add(new RecentProductModel(R.drawable.rice,"Italian Basmati Rice","৳ 300"));
+        recentProductModelList.add(new RecentProductModel(R.drawable.honey,"100% Pure Shundorban Honey","৳ 120"));
+        recentProductModelList.add(new RecentProductModel(R.drawable.oil,"Sunflower Oil","৳ 550"));
+        recentProductModelList.add(new RecentProductModel(R.drawable.pasta,"Italian Pasta","৳ 120"));
+
+        RecentProductAdapter recentProductAdapter = new RecentProductAdapter(getContext(),recentProductModelList);
+        GridLayoutManager productGrid = new GridLayoutManager(getActivity(),2,GridLayoutManager.VERTICAL,false);
+        recentProductRecycle.setLayoutManager(productGrid);
+        recentProductRecycle.setAdapter(recentProductAdapter);
+
+        ////Recent Product end
         return root;
     }
 

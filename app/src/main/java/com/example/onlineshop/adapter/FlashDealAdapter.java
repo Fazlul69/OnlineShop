@@ -9,14 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.onlineshop.ProductDetailsActivity;
 import com.example.onlineshop.R;
-import com.example.onlineshop.ServiceInnerListOneActivity;
 import com.example.onlineshop.model.FlashDealModel;
-import com.example.onlineshop.ui.home.HomeFragment;
 
 import java.util.List;
 
