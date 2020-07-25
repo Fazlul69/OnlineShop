@@ -1,5 +1,6 @@
 package com.example.onlineshop.bottomNavFragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,7 +10,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.example.onlineshop.BalanceCheckActivity;
 import com.example.onlineshop.HomeActivity;
 import com.example.onlineshop.R;
 
@@ -25,6 +28,7 @@ public class DashboardFragment extends Fragment {
         // Required empty public constructor
     }
 
+    Button blnCheckBtn;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,6 +48,16 @@ public class DashboardFragment extends Fragment {
             public void onClick(View view) {
                 getActivity().onBackPressed();
                 /*bottomNavigationView.setVisibility(View.VISIBLE);*/
+            }
+        });
+
+        blnCheckBtn = root.findViewById(R.id.blncCheckBtn);
+
+        blnCheckBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), BalanceCheckActivity.class);
+                startActivity(i);
             }
         });
 
