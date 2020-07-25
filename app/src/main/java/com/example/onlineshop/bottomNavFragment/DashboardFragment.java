@@ -11,8 +11,10 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.onlineshop.BalanceCheckActivity;
+import com.example.onlineshop.EditProfile;
 import com.example.onlineshop.HomeActivity;
 import com.example.onlineshop.R;
 
@@ -29,6 +31,7 @@ public class DashboardFragment extends Fragment {
     }
 
     Button blnCheckBtn;
+    ImageView editProfile;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -52,12 +55,21 @@ public class DashboardFragment extends Fragment {
         });
 
         blnCheckBtn = root.findViewById(R.id.blncCheckBtn);
+        editProfile =  root.findViewById(R.id.editAddress);
 
         blnCheckBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getContext(), BalanceCheckActivity.class);
                 startActivity(i);
+            }
+        });
+
+        editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent edit = new Intent(getContext(), EditProfile.class);
+                startActivity(edit);
             }
         });
 
